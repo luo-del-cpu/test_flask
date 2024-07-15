@@ -1,0 +1,18 @@
+框架
+    MVT
+        model 模型 ---> 与数据库交互
+        view 视图 ---> 负责处理用户请求和生成响应，通过逻辑控制来决定数据如何展示和操作
+        template 模版  ---> 页面
+
+一：搭建框架：
+    1：搭建虚拟环境
+    2：切换虚拟环境并且pip3 install flask
+    3：flask环境搭建
+        a：app = Flask(__name__)
+        b：关联服务器并启动；app.run(host='',port='')
+            在启动的时候默认的模式是production，还有一个development；两种模式在不同的场景有不同的用处
+            debug模式开启，不需要每次重启服务
+        c：注册路由：@app.route('')
+        d：解耦settings.py配置内容
+
+二：路由
