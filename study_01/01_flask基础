@@ -16,3 +16,7 @@
         d：解耦settings.py配置内容
 
 二：路由
+    具体查看下方的app、app1、app2的py文件
+
+三：请求与响应
+    client发出一个请求，flask就会自动将请求封装成一个对象
