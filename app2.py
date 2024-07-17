@@ -20,7 +20,7 @@ def hello_world():
 @app.route('/product')
 def get_product():
     result = url_for('index') # 反向解析路由
-    # 给url_for一个名字，就可以反向解析出这个名字代表的视图函数地址；下方就会返回 /；也就是上方的/
+    # 给url_for一个名字，就可以反向解析出这个名字代表的视图函数地址；下方就会返回 /；也就是上方的/ 
     print(result)
     return ("这是get_product视图函数")
 

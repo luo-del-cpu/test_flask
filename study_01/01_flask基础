@@ -19,4 +19,14 @@
     具体查看下方的app、app1、app2的py文件
 
 三：请求与响应
-    client发出一个请求，flask就会自动将请求封装成一个对象
+    请求：
+        client发出一个请求，flask就会自动将请求封装成一个对象
+    响应：
+        在视图函数的返回值后面可以跟：
+            1：string：系统会自动将str转成一个response对象
+            2：make_response() 构建response对象，可以给response对象添加一些头部信息
+            3：jsonify(datas) 将datas转成json的格式，dict默认使用此函数
+            4：render_template 渲染模版
+            5：from flask import redirect 重定向，会发起两次请求，第一次请求会在response对象里携带
+            新的location（新的路由地址）与302，浏览器看见302继续发起第二次请求（location新地址）
+
